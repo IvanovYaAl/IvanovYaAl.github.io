@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center; /* Center container horizontally */
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #qrText {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .hint {
+    color: #888;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  #qrSize {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #generateBtn {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #qrcode {
+    margin: 20px auto;
+    width: fit-content;
+  }
+  
+  .format-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+  }
+  
+  #formatSelect {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #downloadBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

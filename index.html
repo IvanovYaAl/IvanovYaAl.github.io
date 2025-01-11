@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- QRCodeJS library (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    
+    <!-- Text input (limited to 2000 characters) -->
+    <input 
+      type="text" 
+      id="qrText" 
+      placeholder="Enter text or link..."
+      maxlength="2000"
+    />
+    <p class="hint">Max 2000 characters</p>
+
+    <!-- QR code size input + hint -->
+    <label for="qrSize">Size (px):</label>
+    <input 
+      type="number" 
+      id="qrSize" 
+      value="256" 
+      min="100" 
+      max="512" 
+      step="16" 
+    />
+    <p class="hint">Min size: 100 px, Max size: 512 px</p>
+
+    <button id="generateBtn">Generate</button>
+
+    <div id="qrcode"></div>
+
+    <!-- Format selection + download button -->
+    <div class="format-container">
+      <label for="formatSelect">Format:</label>
+      <select id="formatSelect">
+        <option value="png">PNG</option>
+        <option value="jpeg">JPEG</option>
+        <option value="webp">WEBP</option>
+      </select>
+      <button id="downloadBtn">Download</button>
+    </div>
+  </div>
+
+  <!-- Our script -->
+  <script src="script.js"></script>
+</body>
+</html>
